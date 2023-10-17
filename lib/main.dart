@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'classes/counter_cubit.dart';
 import 'cubit_demo.dart';
+import 'internet_cubits.dart';
 
 
 void main(){
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       create: (_) => CounterCubit(),
       child: const MaterialApp(
         title: "Cubit Demo",
-        home: CubitDemo(),
+        home: InternetCubits(),
       ),
     );
   }
